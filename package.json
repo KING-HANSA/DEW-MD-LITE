@@ -1,12 +1,12 @@
 {
-  "name": "KING-HANSA-LITE",
+  "name": "DEW-MD-LITE",
   "version": "1.0.0",
   "description": "A Simple WhatsApp bot created By Hansa-Dewmina",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name King-Hansa-Lite",
-    "stop": "pm2 stop King-Hansa-Lite",
-    "restart": "pm2 restart King-Hansa-Lite"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Dew-Md",
+    "stop": "pm2 stop Dew-Md",
+    "restart": "pm2 restart Dew-Md"
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
