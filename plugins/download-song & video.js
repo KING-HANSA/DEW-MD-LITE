@@ -1,99 +1,104 @@
+
 const {cmd , commands} = require('../command')
-const fg = require('api-dylux')
-const yts = require('yt-search')
+const fg= require('api-dylux')
+const yts= require('yt-search')
+
 
 cmd({
-    pattern: "song",
-    react: "🎵",
-    desc: "downlod song",
-    category: "downlod",
+    pattern: "audio",
+    desc: "download audio",
+    category: "download",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-
-if(!q) return reply("*❌Please give me url or titel*")
+if (!q) return reply ("Give me URL or Title")
 const search = await yts(q)
-const deta = search.videos[0];
-const url = deta.url 
+const data = search.videos[0];
+const url = data.url
 
-let desc= `
- *🎶𝘼𝘾𝘿-𝗠𝗗   𝗔𝗨𝗗𝗜𝗢-𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥🎶*
-|__________________________
-| ℹ️ *title* : *${deta.title}*
-| 📋 *description* : *${deta.description}*
-| 🕘 *time* : *${deta.timestamp}*
-| 📌 *ago* : *${deta.ago}*
-| 📉 *views* : *${deta.views}*
-|__________________________
+let desc = `
+    ⬇️ *BRANDED MD AUDIO DOWNLOADER* ⬇️
 
-*©ᴘᴏᴡᴇʀᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*
+title:  ${data.title}
+description: ${data.description}
+time: ${data.timestamp}
+ago: ${data.ago}
+views: ${data.views}
 
+MADE BY *MR FADI*
 `
-
-await conn.sendMessage(from,{image :{ url: deta.thumbnail},caption:desc},{quoted:mek});
-
-//downlod audio+ document
+await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
+    
+//download audio
 
 let down = await fg.yta(url)
 let downloadUrl = down.dl_url
 
-//send audio message 
-await conn.sendMessage(from,{audio:{url:downloadUrl},mimetype:"audio/mpeg",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
-await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"audio/mpeg",fileName:deta.title + ".mp3" ,caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
+//send audio + document message
+await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
+ await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title +".mp3", caption: "*Made By > Mr Fadi*"},{quoted:mek})
 
-  
 
+
+    
 }catch(e){
 console.log(e)
 reply(`${e}`)
 }
 })
 
-//========video dl=======
+//===========video-dl========
+
 
 cmd({
     pattern: "video",
-    react: "🎥",
-    desc: "downlod video",
-    category: "downlod",
+    desc: "download video",
+    category: "download",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-
-if(!q) return reply("❌Please give me url or title")
+if (!q) return reply ("Give me URL or Title")
 const search = await yts(q)
-const deta = search.videos[0];
-const url = deta.url 
+const data = search.videos[0];
+const url = data.url
 
-let desc= `
-*📽️𝘼𝘾𝘿-𝗠𝗗   𝗩𝗜𝗗𝗘𝗢-𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥📽️*
-|__________________________
-| ℹ️ *title* : *${deta.title}*
-| 📋 *description* : *${deta.description}*
-| 🕘 *time* : *${deta.timestamp}*
-| 📌 *ago* : *${deta.ago}*
-| 📉 *views* : *${deta.views}*
-|__________________________
+let desc = `
+    ⬇️ *BRANDED MD VIDEO DOWNLOADER* ⬇️
 
-*©ᴘᴏᴡᴇʀᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*
+Title:  ${data.title}
 
+Description: ${data.description}
+
+Time: ${data.timestamp}
+
+ago: ${data.ago}
+
+views: ${data.views}
+
+
+Join My Channel For Updates
+
+ _https://whatsapp.com/channel/0029VatIItrD38CVaysgC42O_
+
+
+> //POWERED BY *MR FADI* 
 `
-
-await conn.sendMessage(from,{image :{ url: deta.thumbnail},caption:desc},{quoted:mek});
-
-//downlod video + document 
+await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
+    
+//download video
 
 let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
 
-//send video  message 
-await conn.sendMessage(from,{video:{url:downloadUrl},mimetype:"video/mp4",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
-await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"video/mp4",fileName:deta.title + ".mp4",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
+//send video + document message
+await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
+ await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title +".mp4",caption: "*Made By > Mr Fadi*"},{quoted:mek})
 
-  
 
+
+    
 }catch(e){
 console.log(e)
 reply(`${e}`)
