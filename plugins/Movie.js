@@ -2,7 +2,7 @@ const config = require('../config')
 const { cmd, commands } = require('../command')
 const axios = require('axios')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
-const { storenumrepdata } = require('../lib/nonbutton')
+const { storenumrepdata } = require('../lib/functions.js')
 function formatNumber(num) {
     return String(num).padStart(2, '0');
 } 
