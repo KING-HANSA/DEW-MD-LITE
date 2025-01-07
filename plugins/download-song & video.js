@@ -1,104 +1,101 @@
 const {cmd , commands} = require('../command')
 const fg = require('api-dylux')
 const yts = require('yt-search')
+
 cmd({
     pattern: "song",
-    desc: "To download songs.",
     react: "🎵",
-    category: "download",
+    desc: "downlod song",
+    category: "downlod",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if(!q) return reply("Please give me a url or title")  
-const search = await yts(q)
-const data = search.videos[0];
-const url = data.url
-    
-    
-let desc = `
-★彡[𝐊𝐈𝐍𝐆-𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑]彡★
 
-╭─「 *ꜱᴏɴɢ ꜰᴏᴜɴᴅ!* 」
-│◈ тιтℓє  ${data.title} 
-│◈ ∂υяαтιση  ${data.timestamp}
-│◈ νιєωѕ  ${data.views}
-│◈ υρℓσα∂є∂ ση  ${data.ago}
-│◈ ℓιηк  ${data.url}
-╰──────────●●►
-╭──────────●●►
-│ © 𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃 
-│ 🎧 *Enjoy the music brought to you by* *KING HANSA LITE*!
-│ 💻 *GitHub* *github.com/KING-HANSA/KING-HANSA-LITE/* 
-╰───────────●●►      
-> *Created with ❤️ by Hansa Dewmina*  
+if(!q) return reply("*❌Please give me url or titel*")
+const search = await yts(q)
+const deta = search.videos[0];
+const url = deta.url 
+
+let desc= `
+ *🎶𝘼𝘾𝘿-𝗠𝗗   𝗔𝗨𝗗𝗜𝗢-𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥🎶*
+|__________________________
+| ℹ️ *title* : *${deta.title}*
+| 📋 *description* : *${deta.description}*
+| 🕘 *time* : *${deta.timestamp}*
+| 📌 *ago* : *${deta.ago}*
+| 📉 *views* : *${deta.views}*
+|__________________________
+
+*©ᴘᴏᴡᴇʀᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*
+
 `
 
-await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
+await conn.sendMessage(from,{image :{ url: deta.thumbnail},caption:desc},{quoted:mek});
 
-//download audio
+//downlod audio+ document
 
 let down = await fg.yta(url)
 let downloadUrl = down.dl_url
 
-//send audio message
-await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*© KING-HANSA ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*"},{quoted:mek})
+//send audio message 
+await conn.sendMessage(from,{audio:{url:downloadUrl},mimetype:"audio/mpeg",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
+await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"audio/mpeg",fileName:deta.title + ".mp3" ,caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
+
+  
 
 }catch(e){
 console.log(e)
-  reply('¢αηт ƒιη∂ α ѕσηg')
+reply(`${e}`)
 }
 })
 
-//====================video_dl=======================
+//========video dl=======
 
 cmd({
     pattern: "video",
-    desc: "To download videos.",
     react: "🎥",
-    category: "download",
+    desc: "downlod video",
+    category: "downlod",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if(!q) return reply("Please give me a url or title")  
-const search = await yts(q)
-const data = search.videos[0];
-const url = data.url
-    
-    
-let desc = `
-★彡[𝐊𝐈𝐍𝐆-𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑]彡★
 
-╭─「 *ᴠɪᴅᴇᴏ ꜰᴏᴜɴᴅ!*」
-│◈ тιтℓє  ${data.title} 
-│◈ ∂υяαтιση  ${data.timestamp}
-│◈ νιєωѕ  ${data.views}
-│◈ υρℓσα∂є∂ ση  ${data.ago}
-│◈ ℓιηк  ${data.url}
-╰──────────●●►
-╭──────────●●►
-│ © 𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃 
-│ 🎬 *Enjoy the video brought to you by* *KING-HANSA-LITE*!
-│ 💻 *GitHub* *github.com/KING-HANSA/KING-HANSA-LITE/* 
-╰───────────●●►      
-> *Created with ❤️ by Hansa Dewmina*
+if(!q) return reply("❌Please give me url or title")
+const search = await yts(q)
+const deta = search.videos[0];
+const url = deta.url 
+
+let desc= `
+*📽️𝘼𝘾𝘿-𝗠𝗗   𝗩𝗜𝗗𝗘𝗢-𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥📽️*
+|__________________________
+| ℹ️ *title* : *${deta.title}*
+| 📋 *description* : *${deta.description}*
+| 🕘 *time* : *${deta.timestamp}*
+| 📌 *ago* : *${deta.ago}*
+| 📉 *views* : *${deta.views}*
+|__________________________
+
+*©ᴘᴏᴡᴇʀᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*
+
 `
 
-await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
+await conn.sendMessage(from,{image :{ url: deta.thumbnail},caption:desc},{quoted:mek});
 
-//download video
+//downlod video + document 
 
 let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
 
-//send video message
-await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*©KING-HANSA-LITE ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*"},{quoted:mek})
+//send video  message 
+await conn.sendMessage(from,{video:{url:downloadUrl},mimetype:"video/mp4",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
+await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"video/mp4",fileName:deta.title + ".mp4",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴄᴅ-ᴍᴅ*"},{quoted:mek})
+
+  
 
 }catch(e){
 console.log(e)
-  reply('¢αηт ƒιη∂ α νι∂єσ')
+reply(`${e}`)
 }
 })
