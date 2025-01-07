@@ -9,6 +9,7 @@ const fg = require('api-dylux')
 const yts = require('yt-search')
 const { cmd, commands } = require('../command')
 var {subsearch , subdl }  = require('@sl-code-lords/si-subdl')
+const {readEnv} = require('../lib/database')
 ffmpeg.setFfmpegPath(ffmpegPath);
 async function videoToWebp (media) {
 
