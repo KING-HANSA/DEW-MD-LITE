@@ -19,16 +19,19 @@ const voice = {
 
 let aliveMessage = ` 
 👋*HI* ${pushname}
-╭────《 𝐈 𝐀𝐦 𝐀𝐥𝐢𝐯𝐞 𝐍𝐨𝐰 》─────⊷
-│ ╭──────────────◆
-│ │ Owner Name: Hansa Dewmina
-│ │ Owner Number: ${config.BOT_NUMBER}
-│ │ Uptime: ${runtime(process.uptime())}
-│ │ Host Name: ${os.hostname()}
-│ │ RAM Usage: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-│ ╰──────────────◆
-╰───────────────⊷
-`
+
+╭────《 *I AM ALIVE* 》
+│ ╭───────────◆
+│ │ Owner Name: Hansa
+│ │ Owner Number:${config.BOT_NUMBER}
+│ │ Uptime:${runtime(process.uptime())}
+│ │ Host Name:${os.hostname()}
+│ │ RAM Usage:${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+│ ╰───────────◆
+╰───────────⊷
+
+*DEW - MD LITE*
+> Dew-Coders™`
     
 await conn.sendMessage(from, { audio: { url: voice.alive }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek })
 
