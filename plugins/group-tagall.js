@@ -33,7 +33,7 @@ const metadata = await conn.groupMetadata(m.chat)
         "\n══✪〘   *TAG ALL*   〙✪══\n\n";
       for (let i of aju) {
          {
-          Axl += " ⭒ @" + i.id.split("@")[0] + "\n";
+          Axl += " │ @" + i.id.split("@")[0] + "\n";
         }
       }
 
