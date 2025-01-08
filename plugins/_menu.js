@@ -35,10 +35,10 @@ menu[commands[i].category] += `│ ${commands[i].pattern}\n`;
 }
 
 let madeMenu = `
-👋 *HELLOW,* ${pushname}!
+👋 *HELLO,* ${pushname}!
 ╭────《 𝐃𝐄𝐖-𝐌𝐃 》──⊷
 │ ╭───────────◆
-│ │ Owner Name: Hansa Dewmina
+│ │ Owner Name: Hansa
 │ │ Owner Number: ${config.BOT_NUMBER}
 │ │ Uptime: ${runtime(process.uptime())}
 │ ╰───────────◆
@@ -60,7 +60,9 @@ ${menu.search}╰━━━━━━━━━──⊷
 ╭────❏ ᴡᴇᴇʙ ❏
 ${menu.anime}╰━━━━━━━━━──⊷
 
-𝐃𝐄𝐖-𝐌𝐃-𝐋𝐈𝐓𝐄 - 𝐌𝐃
+*DEW - MD LITE*
+> Dew-Coders™
+> Hansa Dewmina 2025
 `
 
 await conn.sendMessage(from, { audio: { url: voice.menu }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek })
