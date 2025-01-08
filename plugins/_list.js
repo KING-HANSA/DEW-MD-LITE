@@ -46,7 +46,7 @@ let madeMenu = `
 │ ╰──────────────◆
 ╰───────────────⊷
 ╭────❏ *LIST* ❏
-${menu.download}${menu.main}${menu.fun}${menu.group}${menu.owner}${menu.misc}${menu.search}${menu.anime}
+${menu|.download}${menu.main}${menu.fun}${menu.group}${menu.owner}${menu.misc}${menu.search}${menu.anime}
 ╰━━━━━━━━━━━━━──⊷
 `
 
