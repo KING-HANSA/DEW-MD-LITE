@@ -13,18 +13,15 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 let status = `
-🏷️ *SYSTEM STATUS*
-
-╭─「 *ꜱʏꜱᴛᴇᴍ ꜱᴛᴀᴛᴜꜱ* 」
-│◈ υρтιмє  ${runtime(process.uptime())} 
-│◈ яαм υѕαgє  ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-│◈ нσѕт ηαмє  ${os.hostname()}
-│◈ вσт σωηєя  HANSA DEWMINA
-╰──────────●●►
-╭──────────●●►
-│ © *𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃* 
-│ 🍁 *GitHub:* *github.com/KING-HANSA/KING-HANSA-LITE/* 
-╰───────────●●►      
+╭────《 SYSTEM STATUS 》─────⊷
+│ ╭──────────────◆
+│ │ Owner Name: Hansa Dewmina
+│ │ Owner Number: ${config.BOT_NUMBER}
+│ │ Uptime: ${runtime(process.uptime())}
+│ │ Host Name: ${os.hostname()}
+│ │ RAM Usage: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+│ ╰──────────────◆
+╰───────────────⊷
 `
 return reply(`${status}`)
 }catch(e){
