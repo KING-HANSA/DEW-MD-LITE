@@ -28,7 +28,7 @@ async (conn, mek, m, { from, q, reply }) => {
 🔠 *Translated*: ${translation}
 🌐 *Language*: ${targetLang.toUpperCase()}
 
-> KING-HANSA-LITE`;
+> DEW-MD LITE`;
 
         return reply(translationMessage);
     } catch (e) {
