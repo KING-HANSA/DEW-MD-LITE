@@ -46,8 +46,7 @@ let madeMenu = `
 │ ╰──────────────◆
 ╰───────────────⊷
 ╭────❏ *LIST* ❏
-${menu.download}${menu.main}${menu.fun}${menu.group}${menu.owner}${menu.misc}${menu.search}${menu.anime}
-╰━━━━━━━━━━━━━──⊷
+${menu.download}${menu.main}${menu.fun}${menu.group}${menu.owner}${menu.misc}${menu.search}${menu.anime}╰━━━━━━━━━━━━━──⊷
 `
 
 await conn.sendMessage(from, { audio: { url: voice.menu }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek })
