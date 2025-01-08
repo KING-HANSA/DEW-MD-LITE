@@ -8,7 +8,6 @@ fetchLatestBaileysVersion,
 Browsers
 } = require('@whiskeysockets/baileys')
 
-const l = console.log
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
 const fs = require('fs')
 const P = require('pino')
@@ -18,9 +17,9 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-const prefix = '.'
 
-const ownerNumber = ['94701515609']
+
+const ownerNumber = ['94722336454']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -30,17 +29,26 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("DEW-MD Session downloaded...")
+console.log("Session downloaded ✅...")
 })})}
 
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 8000;
 
-//=============================================
+//============================================
 
 async function connectToWA() {
-console.log("DEW-MD Connecting...");
+//connect mongodb========
+const connectDB = require('./lib/mongodb')
+connectDB();
+//============================
+const {readEnv} = require('./lib/database')
+const config = await readEnv();
+const prefix = config.PREFIX
+//============================
+
+console.log("Connecting wa bot ðŸ§¬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -60,7 +68,7 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('DEW-MD Is Installing... ')
+console.log('ðŸ˜¼ Installing... ')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
@@ -78,7 +86,7 @@ let up = `
 │ ╰──────────────◆
 ╰───────────────⊷`;
 
-conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/JL9z4b0.jpeg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/JL9z4b0.jpeg` }, caption: up })
 
 }
 })
@@ -140,9 +148,8 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-if (isCmd && config.READ_CMD === "true") {
-              await conn.readMessages([mek.key])  // Mark command as read
-          }
+
+//============================================================================ 
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
@@ -154,6 +161,7 @@ for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
  }}
 //==========================================================================================================
+
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
 if (isCmd) {
@@ -184,8 +192,7 @@ mek.type === "stickerMessage"
 ) {
 command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
 }});
-//============================================================================ 
-
+        
 })
 }
 app.get("/", (req, res) => {
@@ -195,4 +202,3 @@ app.listen(port, () => console.log(`Server listening on port http://localhost:${
 setTimeout(() => {
 connectToWA()
 }, 4000);  
-
