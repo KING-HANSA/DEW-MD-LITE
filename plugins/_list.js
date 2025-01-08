@@ -31,7 +31,7 @@ anime: ''
 
 for (let i = 0; i < commands.length; i++) {
 if (commands[i].pattern && !commands[i].dontAddCommandList) {
-menu[commands[i].category] += `.${commands[i].pattern}\n`;
+menu[commands[i].category] += ` |${commands[i].pattern}\n`;
  }
 }
 
@@ -46,7 +46,7 @@ let madeMenu = `
 │ ╰──────────────◆
 ╰───────────────⊷
 ╭────❏ *LIST* ❏
-|${menu.download}${menu.main}${menu.fun}${menu.group}${menu.owner}${menu.misc}${menu.search}${menu.anime}
+${menu.download}${menu.main}${menu.fun}${menu.group}${menu.owner}${menu.misc}${menu.search}${menu.anime}
 ╰━━━━━━━━━━━━━──⊷
 `
 
