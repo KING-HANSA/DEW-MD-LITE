@@ -78,8 +78,7 @@ let up = `
 │ ╰───────────◆
 ╰───────────⊷
 *DEW - MD LITE*
-> Dew-Coders™
-> Hansa Dewmina 2025`;
+> Dew-Coders™`;
 
 conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/JL9z4b0.jpeg` }, caption: up })
 
