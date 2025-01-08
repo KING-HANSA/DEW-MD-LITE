@@ -7,7 +7,7 @@ const {runtime} = require('../lib/functions')
 cmd({
     pattern: "list",
     desc: "To get the list.",
-    react: "🍁",
+    react: "📜",
     category: "main",
     filename: __filename
 },
@@ -36,7 +36,7 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 }
 
 let madeMenu = `
-👋 𝐇𝐄𝐋𝐋𝐎, ${pushname}
+👋 *HELLO*, ${pushname}
 
 ╭────《 𝐃𝐄𝐖-𝐌𝐃 》─────⊷
 │ ╭──────────────◆
