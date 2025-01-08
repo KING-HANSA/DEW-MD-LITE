@@ -13,7 +13,7 @@ co/**
 
 World best and powerfull whatsapp user bot in Sri lanka*/
 
-nst axios = require('axios');
+const axios = require('axios');
 const config = require('../config');
 const { cmd, commands } = require('../command');
 
