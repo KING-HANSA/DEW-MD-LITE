@@ -1,3 +1,18 @@
+/**
+██████╗ ███████╗██╗    ██╗    ███╗   ███╗██████╗     ██╗     ██╗████████╗███████╗
+██╔══██╗██╔════╝██║    ██║    ████╗ ████║██╔══██╗    ██║     ██║╚══██╔══╝██╔════╝
+██║  ██║█████╗  ██║ █╗ ██║    ██╔████╔██║██║  ██║    ██║     ██║   ██║   █████╗  
+██║  ██║██╔══╝  ██║███╗██║    ██║╚██╔╝██║██║  ██║    ██║     ██║   ██║   ██╔══╝  
+██████╔╝███████╗╚███╔███╔╝    ██║ ╚═╝ ██║██████╔╝    ███████╗██║   ██║   ███████╗
+╚═════╝ ╚══════╝ ╚══╝╚══╝     ╚═╝     ╚═╝╚═════╝     ╚══════╝╚═╝   ╚═╝   ╚══════╝                                                                            
+         
+* Project name - DEW-MD-LITE 
+* Author - Hansa Dewmina
+* Team - Dewminacoders 
+* Version - vX
+
+World best and powerfull whatsapp user bot in Sri lanka*/
+
 const { cmd, commands } = require('../command');
 
 cmd({
@@ -30,7 +45,7 @@ const metadata = await conn.groupMetadata(m.chat)
       const aju = metadata.participants || {};
        
       let Axl =
-        "\n══✪〘   *TAG ALL*   〙✪══\n\n";
+        "\╭────《 *TAG ALL* 》\n\n";
       for (let i of aju) {
          {
           Axl += " │ @" + i.id.split("@")[0] + "\n";
