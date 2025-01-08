@@ -65,21 +65,17 @@ const url = data.url
     
     
 let desc = `
-★彡[𝐊𝐈𝐍𝐆-𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑]彡★
-
-╭─「 *ᴠɪᴅᴇᴏ ꜰᴏᴜɴᴅ!*」
-│◈ тιтℓє  ${data.title} 
-│◈ ∂υяαтιση  ${data.timestamp}
-│◈ νιєωѕ  ${data.views}
-│◈ υρℓσα∂є∂ ση  ${data.ago}
-│◈ ℓιηк  ${data.url}
-╰──────────●●►
-╭──────────●●►
-│ © 𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃 
-│ 🎬 *Enjoy the video brought to you by* *KING-HANSA-LITE*!
-│ 💻 *GitHub* *github.com/KING-HANSA/KING-HANSA-LITE/* 
-╰───────────●●►      
-> *Created with ❤️ by Hansa Dewmina*
+★彡[*DEW-MD-LITE VIDEO DOWNLOADER*]彡★
+╭────《 𝐃𝐄𝐖-𝐌𝐃 》─────⊷
+│ ╭──────────────◆
+│ │ Title: ${data.title}
+│ │ Duration: ${data.timestamp}
+│ │ Views: ${data.views}
+│ │ Uploaded On: ${data.ago}
+│ │ Link: ${data.url}
+│ ╰──────────────◆
+╰───────────────⊷
+> Created with ❤️ by Hansa Dewmina  
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
