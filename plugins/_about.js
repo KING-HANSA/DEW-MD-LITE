@@ -13,15 +13,13 @@ try{
 
 let about = `
 👋*HELLOW THEIR* ${senderNumber}
+╭────《 𝐀𝐛𝐨𝐮𝐭 》─────⊷
+│ ╭──────────────◆
+│ │ *I AM KING-HANSA-LITE WHATSAPP BOT*
+│ │ *CREATED BY DEWMINA-HD(HANSA DEWMINA)*
+│ ╰──────────────◆
+╰───────────────⊷
 
-╭─「 *ᴀʙᴏᴜᴛ* 」
-│◈ *I AM KING-HANSA-LITE WHATSAPP BOT*
-│◈ *CREATED BY DEWMINA-HD(HANSA DEWMINA)*..
-╰──────────●●►
-╭──────────●●►
-│© 𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃 *
-│🍁*GitHub*:*github.com/KING-HANSA/KING-HANSA-LITE*
-╰───────────●●►
 *THANKS FOR USING KING-HANSA WHATSAPP BOT MD*`
 return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption:about},{quoted: mek})
 }catch(e){
