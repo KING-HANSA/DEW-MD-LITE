@@ -40,7 +40,8 @@ owner: '',
 misc: '',
 search: '',
 fun: '',
-anime: ''
+anime: '',
+sinhala: ''
 };
 
 for (let i = 0; i < commands.length; i++) {
@@ -74,6 +75,8 @@ ${menu.misc}╰━━━━━━━━━──⊷
 ${menu.search}╰━━━━━━━━━──⊷
 ╭────❏ ᴡᴇᴇʙ ❏
 ${menu.anime}╰━━━━━━━━━──⊷
+╭────❏ *සින්හල* ❏
+${menu.sinhala}╰━━━━━━━━━──⊷
 
 *DEW - MD LITE*
 > Dew-Coders™
