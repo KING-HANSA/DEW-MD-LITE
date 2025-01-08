@@ -36,7 +36,7 @@ menu[commands[i].category] += `│ ${commands[i].pattern}\n`;
 
 let madeMenu = `
 👋 *HELLOW,* ${pushname}!
-╭────《 𝐃𝐄𝐖-𝐌𝐃 》─────⊷
+╭────《 𝐃𝐄𝐖-𝐌𝐃 》──⊷
 │ ╭───────────◆
 │ │ Owner Name: Hansa Dewmina
 │ │ Owner Number: ${config.BOT_NUMBER}
