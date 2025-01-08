@@ -39,8 +39,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 image: buffer,
                 caption: `
 🌟 *Image ${i + 1} from your search!* 🌟
-✨ 𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐈𝐌𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 ✨
-        *єηנσу тнєѕє ιмαgєѕ!* 🍁
+💕 *DEW-MD-LITE IMAGE DOWNLOADER* 💕
+        *єηנσу тнєѕє ιмαgєѕ!* 💗
 `
 }, { quoted: mek });
 }
