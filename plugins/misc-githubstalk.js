@@ -1,4 +1,19 @@
-const axios = require('axios');
+co/**
+██████╗ ███████╗██╗    ██╗    ███╗   ███╗██████╗     ██╗     ██╗████████╗███████╗
+██╔══██╗██╔════╝██║    ██║    ████╗ ████║██╔══██╗    ██║     ██║╚══██╔══╝██╔════╝
+██║  ██║█████╗  ██║ █╗ ██║    ██╔████╔██║██║  ██║    ██║     ██║   ██║   █████╗  
+██║  ██║██╔══╝  ██║███╗██║    ██║╚██╔╝██║██║  ██║    ██║     ██║   ██║   ██╔══╝  
+██████╔╝███████╗╚███╔███╔╝    ██║ ╚═╝ ██║██████╔╝    ███████╗██║   ██║   ███████╗
+╚═════╝ ╚══════╝ ╚══╝╚══╝     ╚═╝     ╚═╝╚═════╝     ╚══════╝╚═╝   ╚═╝   ╚══════╝                                                                            
+         
+* Project name - DEW-MD-LITE 
+* Author - Hansa Dewmina
+* Team - Dewminacoders 
+* Version - vX
+
+World best and powerfull whatsapp user bot in Sri lanka*/
+
+nst axios = require('axios');
 const config = require('../config');
 const { cmd, commands } = require('../command');
 
@@ -21,23 +36,21 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = response.data;
 
         let userInfo = `
-💜*KING-HANSA-LITE GIT STALK*
+╭────《 *GIT STALK* 》
+│ ╭───────────◆
+│ │ UserName:${data.name || data.login}
+│ │ GithubUrl:(${data.html_url})
+│ │ Bio:${data.bio || 'Not available'}
+│ │ Location:${data.location || 'Unknown'}
+│ │ PublicRepos:${data.public_repos}
+│ │ Followers:${data.followers} | Following: ${data.following}
+│ │ CreatedAt:${new Date(data.created_at).toDateString()}
+│ │ PublicGitst:${data.public_gists}
+│ ╰───────────◆
+╰───────────⊷
 
-╭─「 *ɢɪᴛ ꜱᴛᴀʟᴋ* 」
-│◈ *υѕєяηαмє*  ${data.name || data.login}
-│◈ *gιтнυв υяℓ*  (${data.html_url})
-│◈ *вισ*  ${data.bio || 'Not available'}
-│◈ *ℓσ¢αтιση*  ${data.location || 'Unknown'}
-│◈ *ρυвℓι¢ яєρσѕ*  ${data.public_repos}
-│◈ *ƒσℓℓσωєяѕ*  ${data.followers} | Following: ${data.following}
-│◈ *¢яєαтє∂ αт*  ${new Date(data.created_at).toDateString()}
-│◈ *ρυвℓι¢ gιѕтѕ*  ${data.public_gists}
-╰──────────●●►
-╭──────────●●►
-│© 𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃* 
-│🍁 *GitHub*: *github.com/KING-HANSA/KING-HANSA-LITE/*
-╰───────────●●►      
-> *KING-HANSA-LITE-GIT-STALK*
+*DEW - MD LITE*
+> Dew-Coders™
 `;
 
         await conn.sendMessage(from, { image: { url: data.avatar_url }, caption: userInfo }, { quoted: mek });
