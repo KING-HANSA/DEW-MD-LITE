@@ -35,7 +35,7 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 }
 
 let madeMenu = `
-👋 𝐇𝐄𝐋𝐋𝐎, ${pushname}!
+👋 *HELLOW,* ${pushname}!
 ╭────《 𝐃𝐄𝐖-𝐌𝐃 》─────⊷
 │ ╭──────────────◆
 │ │ Owner Name: Hansa Dewmina
