@@ -71,10 +71,10 @@ console.log('DEW-MD Plugins installed successful')
 console.log('DEW-MD connected to whatsapp 🪀')
 
 let up = `
-╭────《 *I AM ALIVE* 》──⊷
+╭────《 *I AM ALIVE* 》
 │ ╭───────────◆
 │ │ Owner Name: *Hansa*
-│ │ Owner Number: ${config.BOT_NUMBER}
+│ │ Owner Number:${config.BOT_NUMBER}
 │ ╰───────────◆
 ╰───────────⊷
 *DEW - MD LITE*
