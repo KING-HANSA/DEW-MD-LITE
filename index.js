@@ -71,12 +71,13 @@ console.log('DEW-MD Plugins installed successful')
 console.log('DEW-MD connected to whatsapp 🪀')
 
 let up = `
-╭────《 *DEW-MD LITE IS ALIVE NOW* 》─────⊷
-│ ╭──────────────◆
-│ │ Owner Name : Hansa Dewmina
+╭────《 *DEW-MD LITE IS ALIVE NOW* 》──⊷
+│ ╭───────────◆
+│ │ Owner Name: Hansa
 │ │ Owner Number: ${config.BOT_NUMBER}
-│ ╰──────────────◆
-╰───────────────⊷`;
+│ │ Uptime: ${runtime(process.uptime())}
+│ ╰───────────◆
+╰───────────⊷`;
 
 conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/JL9z4b0.jpeg` }, caption: up })
 
