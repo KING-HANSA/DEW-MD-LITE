@@ -13,16 +13,18 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 let status = `
-╭────《 SYSTEM STATUS 》─────⊷
-│ ╭──────────────◆
-│ │ Owner Name: Hansa Dewmina
+╭────《 *SYSTEM STATUS* 》
+│ ╭───────────◆
+│ │ Owner Name: Hansa
 │ │ Owner Number: ${config.BOT_NUMBER}
 │ │ Uptime: ${runtime(process.uptime())}
 │ │ Host Name: ${os.hostname()}
 │ │ RAM Usage: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB
-│ ╰──────────────◆
-╰───────────────⊷
-`
+│ ╰───────────◆
+╰───────────⊷
+
+*DEW - MD LITE*
+> Dew-Coders™`
 return reply(`${status}`)
 }catch(e){
 console.log(e)
