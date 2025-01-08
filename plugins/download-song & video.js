@@ -18,16 +18,18 @@ const url = data.url
     
 let desc = `
 ★彡[*DEW-MD-LITE SONG DOWNLOADER*]彡★
-╭────《 𝐃𝐄𝐖-𝐌𝐃 》─────⊷
-│ ╭──────────────◆
+╭────《 *DEW-MD* 》
+│ ╭───────────◆
 │ │ Title: ${data.title}
 │ │ Duration: ${data.timestamp}
 │ │ Views: ${data.views}
 │ │ Uploaded On: ${data.ago}
 │ │ Link: ${data.url}
-│ ╰──────────────◆
-╰───────────────⊷
-> Created with ❤️ by Hansa Dewmina  
+│ ╰───────────◆
+╰───────────⊷
+
+*DEW - MD LITE*
+> Dew-Coders™
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -39,7 +41,7 @@ let downloadUrl = down.dl_url
 
 //send audio message
 await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*© KING-HANSA ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*©DEW-MD-LITE*"},{quoted:mek})
 
 }catch(e){
 console.log(e)
@@ -65,17 +67,19 @@ const url = data.url
     
     
 let desc = `
-★彡[*DEW-MD-LITE VIDEO DOWNLOADER*]彡★
-╭────《 𝐃𝐄𝐖-𝐌𝐃 》─────⊷
-│ ╭──────────────◆
+★彡[*DEW-MD-LITE SONG DOWNLOADER*]彡★
+╭────《 *DEW-MD* 》
+│ ╭───────────◆
 │ │ Title: ${data.title}
 │ │ Duration: ${data.timestamp}
 │ │ Views: ${data.views}
 │ │ Uploaded On: ${data.ago}
 │ │ Link: ${data.url}
-│ ╰──────────────◆
-╰───────────────⊷
-> Created with ❤️ by Hansa Dewmina  
+│ ╰───────────◆
+╰───────────⊷
+
+*DEW - MD LITE*
+> Dew-Coders™
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -87,7 +91,7 @@ let downloadUrl = down.dl_url
 
 //send video message
 await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*©KING-HANSA-LITE ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ*"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"©DEW-MD-LITE*"},{quoted:mek})
 
 }catch(e){
 console.log(e)
