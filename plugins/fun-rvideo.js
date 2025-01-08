@@ -36,7 +36,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         writer.on('finish', async () => {
             await conn.sendMessage(from, { text: '✅ *Your video has been successfully downloaded!* ✅' }, { quoted: mek });
-            await conn.sendMessage(from, { video: { url: videoPath }, caption: `🎥 *Random Pexels Video* 🎥\n\nTitle: ${videoTitle}\n> KING-HANSA-LITE` }, { quoted: mek });
+            await conn.sendMessage(from, { video: { url: videoPath }, caption: `🎥 *Random Pexels Video* 🎥\n\nTitle: ${videoTitle}\n> DEW-MD-LITE` }, { quoted: mek });
 
             // Clean up
             fs.unlinkSync(videoPath);
