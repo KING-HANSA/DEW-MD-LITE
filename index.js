@@ -1,3 +1,4 @@
+
 const {
 default: makeWASocket,
 useMultiFileAuthState,
@@ -75,18 +76,12 @@ if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('DEW-MD Plugins installed successful')
-console.log('DEW-MD connected to whatsapp 🪀')
+console.log('Plugins installed successful ✅🤖…')
+console.log('Bot connected to whatsapp ✅🤖…')
 
-let up = `
-╭────《 𝐃𝐄𝐖-𝐌𝐃 - 𝐋𝐈𝐓𝐄 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 𝐍𝐎𝐖 》─────⊷
-│ ╭──────────────◆
-│ │ Owner Name : Hansa Dewmina
-│ │ Owner Number: ${config.BOT_NUMBER}
-│ ╰──────────────◆
-╰───────────────⊷`;
+let up = `> BOXTER MD BOT connected successful ✅…\n\nJoin Our Support Chanel🤖🇱🇰 =  https://whatsapp.com/channel/0029VaePgYXBqbr6Vkg75n1j\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/JL9z4b0.jpeg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://unitedcamps.in/Images/file_406.jpg` }, caption: up })
 
 }
 })
@@ -153,14 +148,6 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
-//=============AUTO VOICE==========================
-if (config.AUTO_VOICE === 'true') {
-const url = 'https://raw.githubusercontent.com/KING-HANSA/VOICE-KING-HANSA/main/Voice-Raw/KING-HANSA-VOICE'
-let { data } = await axios.get(url)
-for (vr in data){
-if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
- }}
-//==========================================================================================================
 
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
@@ -196,7 +183,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("|| 🍁 DEW-MD-LITE - POWERD BY HANSA DEWMINA 🍁 ||");
+res.send("hey, bot startedâœ…");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
