@@ -1,4 +1,4 @@
-const config = require('../config')
+const {readEnv} = require('../lib/database')
 const {cmd , commands} = require('../command')
 const os = require("os")
 const {runtime} = require('../lib/functions')
@@ -11,12 +11,9 @@ cmd({
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
+try{   
+const config = await readEnv();
     
-const voice = {
-    menu: 'media/media_menu.mp3'
-}
-
 let menu = {
 main: '',
 download: '',
@@ -30,7 +27,7 @@ anime: ''
 
 for (let i = 0; i < commands.length; i++) {
 if (commands[i].pattern && !commands[i].dontAddCommandList) {
-menu[commands[i].category] += `.${commands[i].pattern}\n`;
+menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
  }
 }
 
