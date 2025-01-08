@@ -75,9 +75,6 @@ let up = `
 │ ╭──────────────◆
 │ │ Owner Name : Hansa Dewmina
 │ │ Owner Number: ${config.BOT_NUMBER}
-│ │ Uptime: ${runtime(process.uptime())}
-│ │ Host Name: ${os.hostname()}
-│ │ RAM Usage: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 │ ╰──────────────◆
 ╰───────────────⊷`;
 
