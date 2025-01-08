@@ -36,7 +36,7 @@ menu[commands[i].category] += `│ ${commands[i].pattern}\n`;
 
 let madeMenu = `
 👋 *HELLO,* ${pushname}!
-╭────《 𝐃𝐄𝐖-𝐌𝐃 》──⊷
+╭────《 *DEW-MD* 》
 │ ╭───────────◆
 │ │ Owner Name: Hansa
 │ │ Owner Number: ${config.BOT_NUMBER}
@@ -62,7 +62,6 @@ ${menu.anime}╰━━━━━━━━━──⊷
 
 *DEW - MD LITE*
 > Dew-Coders™
-> Hansa Dewmina 2025
 `
 
 await conn.sendMessage(from, { audio: { url: voice.menu }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek })
