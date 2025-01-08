@@ -6,6 +6,7 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "iJxXUbIB#2YdZCVMoLiF-kiwHprgQfs09Qsc4kuHLdPmR1MIv3H8",
+MONGODB: process.env.MONGODB || "mongodb+srv://kulathungaasitha319:yjHB0DvFfStNfwPS@cluster0.3oijd.mongodb.net/",
 ALIVE_IMG: process.env.ALIVE_IMG || "https://i.imgur.com/JL9z4b0.jpeg",
 ALIVE_MSG: process.env.ALIVE_MSG || "HELLOW THEIR, DEW-MD IS ALIVE...\n\nOWNER: HANSA DEWMINA\n\nTHANKS FOR USING DEW-MD-LITE\n\n> *© ᴅᴇᴡ-ᴍᴅ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ*",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
