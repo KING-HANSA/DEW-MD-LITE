@@ -11,7 +11,7 @@ let baseUrl;
 })();
 
 
-const yourName = "𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃";
+const yourName = "DEW-MD-LITE";
 
 
 
