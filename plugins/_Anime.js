@@ -1,3 +1,18 @@
+/**
+██████╗ ███████╗██╗    ██╗    ███╗   ███╗██████╗     ██╗     ██╗████████╗███████╗
+██╔══██╗██╔════╝██║    ██║    ████╗ ████║██╔══██╗    ██║     ██║╚══██╔══╝██╔════╝
+██║  ██║█████╗  ██║ █╗ ██║    ██╔████╔██║██║  ██║    ██║     ██║   ██║   █████╗  
+██║  ██║██╔══╝  ██║███╗██║    ██║╚██╔╝██║██║  ██║    ██║     ██║   ██║   ██╔══╝  
+██████╔╝███████╗╚███╔███╔╝    ██║ ╚═╝ ██║██████╔╝    ███████╗██║   ██║   ███████╗
+╚═════╝ ╚══════╝ ╚══╝╚══╝     ╚═╝     ╚═╝╚═════╝     ╚══════╝╚═╝   ╚═╝   ╚══════╝                                                                            
+         
+* Project name - DEW-MD-LITE 
+* Author - Hansa Dewmina
+* Team - Dewminacoders 
+* Version - vX
+
+World best and powerfull whatsapp user bot in Sri lanka*/
+
 const axios = require('axios');
 const { cmd, commands } = require('../command');
 
@@ -14,7 +29,7 @@ const apiUrl = `https://api.waifu.pics/nsfw/waifu`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random waifu Girl Image* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random waifu Girl Image* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime girl image: ${e.message}`);
@@ -35,7 +50,7 @@ const apiUrl = `https://api.waifu.pics/nsfw/blowjob`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random blowjob Girl Image* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random blowjob Girl Image* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime girl image: ${e.message}`);
@@ -55,7 +70,7 @@ const apiUrl = `https://api.waifu.pics/sfw/waifu`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime Girl Image* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime Girl Image* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime girl image: ${e.message}`);
@@ -75,7 +90,7 @@ const apiUrl = `https://api.waifu.pics/sfw/kill`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime kill Image* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime kill Image* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime kill image: ${e.message}`);
@@ -95,7 +110,7 @@ const apiUrl = `https://api.waifu.pics/sfw/kiss`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime kiss* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime kiss* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime kiss image: ${e.message}`);
@@ -115,7 +130,7 @@ const apiUrl = `https://api.waifu.pics/sfw/pat`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime pat Image* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random Anime pat Image* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime girl image: ${e.message}`);
@@ -135,7 +150,7 @@ const apiUrl = `https://api.waifu.pics/sfw/slap`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random slap* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random slap* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime girl image: ${e.message}`);
@@ -155,7 +170,7 @@ const apiUrl = `https://api.waifu.pics/nsfw/trap`;
 const response = await axios.get(apiUrl);
 const data = response.data;
 
-await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random trap Girl Image* 🍓\n> KING-HANSA-LITE' }, { quoted: mek });
+await conn.sendMessage(from, { image: { url: data.url }, caption: '🍁 *Random trap Girl Image* 🍓\n> DEW-MD-LITE' }, { quoted: mek });
 } catch (e) {
 console.log(e);
 reply(`Error fetching anime girl image: ${e.message}`);
