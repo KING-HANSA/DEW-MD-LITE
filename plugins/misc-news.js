@@ -20,15 +20,16 @@ async (conn, mek, m, { from, reply }) => {
         for (let i = 0; i < Math.min(articles.length, 5); i++) {
             const article = articles[i];
             let message = `
-╭─「 *ᴀʀᴛɪᴄʟᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ* 」
-│◈ тιтℓє  ${article.title}
-│◈ ∂єѕ¢яιρтιση  ${article.description}
-│◈ υяℓ  ${article.url}
-╰──────────●●►
-╭──────────●●►
-│© 𝐊𝐈𝐍𝐆 𝐇𝐀𝐍𝐒𝐀-𝐋𝐈𝐓𝐄 - 𝐌𝐃 
-│🍁 *GitHub:* *github.com/KING-HANSA/KING-HANSA-LITE/* 
-╰───────────●●►     
+╭────《 *Article Info* 》
+│ ╭───────────◆
+│ │ Title:${article.title}
+│ │ Description:${article.description}
+│ │ Url:${article.url}
+│ ╰───────────◆
+╰───────────⊷
+
+*DEW - MD LITE*
+> Dew-Coders™   
             `;
 
             console.log('Article URL:', article.urlToImage); // Log image URL for debugging
