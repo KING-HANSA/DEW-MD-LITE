@@ -33,7 +33,7 @@ let madeMenu = `❁ ════ ❃•◯•❃ ════ ❁
       *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ꜱᴏʙɪᴀ ᴍᴅ ғᴜʟʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-*ᴄʀᴇᴀᴛᴇᴅ ʙʏ Uᴍᴀʀ*
+*Created BY Dew-Coder*
 
 
 *╭──❮ DOWNLOAD COMMANDS ❯*
@@ -154,11 +154,11 @@ let madeMenu = `❁ ════ ❃•◯•❃ ════ ❁
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-> *https://github.com/Sobxsparl/SOBIA-MD*
+> *https://github.com/KING-HANSA/DEW-MD/LITE*
 
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Uᴍ4ʀ*
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ DEW-CODER*
 
 ╰━❁ ═══ ❃•⇆•❃ ═══ ❁━╯
 `
