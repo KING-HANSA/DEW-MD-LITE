@@ -77,6 +77,6 @@
     "phone" : "3.1.30",
     "jimp": "^0.16.1",
     "stream" : "0.0.3",
-    "body-parser": "^1.20.3"
-  "google-tts-api": "^2.0.2"
+    "body-parser": "^1.20.3",
+    "google-tts-api": "^2.0.2"
 }
