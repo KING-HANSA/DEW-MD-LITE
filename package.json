@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
-    "@whiskeysockets/baileys": "6.6.0",
-    "@stablelib/x25519-session": "2.0.0",
-    "@types/android-versions": "1.8.3",
+    "@whiskeysockets/baileys": "^6.6.0",
+    "@stablelib/x25519-session": "^2.0.0",
+    "@types/android-versions": "^1.8.3",
     "@sl-code-lords/esana-news" : "latest",
     "@kaveesha-sithum/derana-news" : "latest",
     "@sl-code-lords/movie-api": "1.0.0",    
