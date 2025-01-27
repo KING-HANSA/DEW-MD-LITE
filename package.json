@@ -28,6 +28,7 @@
     "fb-downloader-new":"0.0.2",
     "ruhend-scraper":"7.0.6",
     "wa-sticker-formatter": "latest",
+    "mongoose": "8.9.0",
     "@bochilteam/scraper": "latest"
   }
 }
