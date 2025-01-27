@@ -17,16 +17,17 @@ const voice = {
     alive: ''
 }
 
-let aliveMessage = ` 
-❤»»» *DEW-MD* »»»❤
+let aliveMessage = ` ❁ ════ ❃•◯•❃ ════ ❁
 
-👋𝗛𝗶⚡ ${pushname}!
+*⇆ ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ⇆*
 
- ╭─「𝐈 𝐚𝐦 𝐀𝐥𝐢𝐯𝐞 𝐍𝐨𝐰」
-│◈ яυηтιмє - ${runtime(process.uptime())}
-│◈ σωηєя ηαмє - 𝐇𝐚𝐧𝐬𝐚 𝐃𝐞𝐰𝐦𝐢𝐧𝐚
-│◈ σωηєя ηυмвєя - ${config.BOT_NUMBER}
-╰──────────●●►
+     *${pushname}*
+     
+❁ ════ ❃•◯•❃ ════ ❁
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+      *I'AM ALIVE NOW*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 `
     
 //*await conn.sendMessage(from, { audio: { url: voice.alive }, mimetype: 'audio/mp4', ptt: true }, { quoted: mek })
@@ -35,6 +36,6 @@ return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption:alive
 
 }catch(e){
 console.log(e)
-reply(`αη єяяσя`)
+reply(`කිසියම් දෝශයක් සිදුවිය`)
 }
 })
