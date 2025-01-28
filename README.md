@@ -4,7 +4,7 @@
 <img src = "https://i.imgur.com/VJlI4HR.jpeg"  width="900" height="450">
 </img>
  <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=QUEEN+ROSHIKA+WHATSAPP+BOT" alt="">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=DEW+MD+WHATSAPP+BOT" alt="">
 </p>
     <p align="center">
 <a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-HANSA_DEWMINA-red.svg?style=for-the-badge&logo=github"></a>
@@ -14,14 +14,14 @@ Queen Roshika is a whatsapp bot created by Hansa Dewmina ( DEWMINA-HD ) using ba
 We are not responsible for any problems caused by your use of this!
 And Subscribe DJ DEWMINA and give one star for queen Roshika.
 </br>
-#### Give One star For Queen Roshika and [Follow Me](https://github.com/DEWMINA-HD) 
+#### Give One star For Queen Roshika and [Follow Me](https://github.com/KING-HANSA) 
 
-## How create queen Roshika.
+## How create Dew-MD.
 
 **. Deploy steps.*
- - 1._Fork queen Roshika repository._
+ - 1._Fork DEW-MD repository._
     <br>
-    <a href="https://github.com/DEWMINA-HD/QUEEN-ROSHIKA/fork"><img title="QUEEN-ROSHIKA-MD" src="https://img.shields.io/badge/FORK QUEEN_ROSHIKA-h?color=black&style=for-the-badge&logo=stackshare"></a>
+    <a href="https://github.com/KING-HANSA/QUEEN-ROSHIKA/fork"><img title="QUEEN-ROSHIKA-MD" src="https://img.shields.io/badge/FORK DEW_MD-h?color=black&style=for-the-badge&logo=stackshare"></a>
  - 2._Link with yoour whatsappp using pair code._
    **Pair with WhatsApp* 
    <p align="center">
