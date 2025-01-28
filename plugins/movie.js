@@ -25,7 +25,7 @@ cmd({
         }
 
         const movieInfo = `
-*🎬 SOBIA MD 🎬*
+*🎬 DEW-MD 🎬*
 
 *ᴛɪᴛʟᴇ:* ${data.Title}
 *ʏᴇᴀʀ:* ${data.Year}
@@ -46,7 +46,7 @@ cmd({
 
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> UMAR`
+            caption: `${movieInfo}\n> DEW-CODERS`
         }, { quoted: mek });
     } catch (e) {
         console.error(e);
