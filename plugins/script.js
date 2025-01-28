@@ -40,7 +40,7 @@ title: 'DEW-MD',
 body: `${pushname}`,
 mediaType: 1,
 sourceUrl: "https://github.com/KING-HANSA/DEW-MD-LITE" ,
-thumbnailUrl: "https://i.imgur.com/YXp71EV.jpeg" ,
+thumbnailUrl: "https://i.ibb.co/jwtgYGP/Parte-de-mi-Oc-Sairus-Kiusen-sairuskiusen-oc.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
