@@ -98,7 +98,7 @@ let up = `*╭──────────────●●►*
 
 *╰──────────────●●►*`;
 
-conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/dfkL19B/20241019-101138.jpg` }, caption: up })
+conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/VJlI4HR.jpeg` }, caption: up })
 
 }
 })
