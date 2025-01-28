@@ -1,4 +1,3 @@
-
 const config = require('../config')
 const {cmd , commands} = require('../command')
 const os = require("os")
@@ -34,10 +33,10 @@ let madeMenu = `╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
      
 ╰━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━
-      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ꜱᴏʙɪᴀ ᴍᴅ ғᴜʟʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+      *WELCOME TO DEW-MD*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-*ᴄʀᴇᴀᴛᴇᴅ ʙʏ ꜱᴏʙɪᴀ ʙᴜᴛᴛ*
+*CREATED BY DEW-CODERS*
 
 *┌─〈 ${config.BOT_NAME} 〉─◆*
 *│╭─────────────···▸*
@@ -46,8 +45,8 @@ let madeMenu = `╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
 *❖│▸* *ᴍᴏᴅᴇ* : *[${config.MODE}]*
 *❖│▸* *ᴘʀᴇғɪx* : *[${config.PREFIX}]*
 *❖│▸* *ʀᴀᴍ ᴜsᴇ* : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-*❖│▸* *ɴᴀᴍᴇ ʙᴏᴛ* : *Sᴏʙɪᴀ Mᴅ*
-*❖│▸* *ᴄʀᴇᴀᴛᴏʀ* : *Uᴍ4ʀ719*
+*❖│▸* *ɴᴀᴍᴇ ʙᴏᴛ* : *DEW-MD*
+*❖│▸* *ᴄʀᴇᴀᴛᴏʀ* : *DEW-CODE*
 *❖│▸* *ᴠᴇʀsɪᴏɴs* : *ᴠ.2.0.0*
 *❖│▸* *ᴍᴇɴᴜ ᴄᴍᴅ* : *ᴍᴇɴᴜ ʟɪsᴛ*
 *┬│▸*
@@ -186,11 +185,11 @@ let madeMenu = `╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
 *❒⁠⁠⁠⁠▭▬▭▬▭▬▭▬▭▬▭▬▭❒*⁠⁠⁠⁠
 
 ┏━━━━━━━━━━━━━━━━━━━
-*https://whatsapp.com/channel/0029VaswGwq5a23yxeJ6YB3t*
+*https://whatsapp.com/channel/0029Varwcfc7YSd60AulNF2h*
 ┗━━━━━━━━━━━━━━━━━━━
 
 
-> *POWERED BY SOBIA MD*
+> *POWERED BY DEW-MD*
 ╘✦•·········•••••••••············•✦ 
 `
 
