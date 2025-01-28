@@ -64,7 +64,8 @@ async (conn, mek, m, { from, body, isOwner }) => {
 cmd({
   on: "body"
 },    
-async (conn, mek, m, { from, body, isOwner }) => {       
+async (conn, mek, m, { from, body, isOwner }) => {  
+const config = await readEnv();     
  if (config.FAKE_RECORDING === 'true') {
                 await conn.sendPresenceUpdate('recording', from);
             }
