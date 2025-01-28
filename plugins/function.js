@@ -1,7 +1,7 @@
 const { cmd } = require('../command')
 const fs = require('fs');
 const path = require('path');
-const config = require('../config')
+const {readEnv} = require('../lib/database')
 // List of bad words to check against
  // Replace with actual words
 cmd({
@@ -9,6 +9,7 @@ cmd({
 },
 async (conn,mek, m, { from, body, isGroup, isAdmins, isBotAdmins, reply, sender }) => {
     try {
+        const config = await readEnv();
     
         const badWords = ["paka", "wuththo", "xxx","fuck","sex","huththa","pakaya","ponnaya","hutto","kariya"]
         if (!isGroup || isAdmins || !isBotAdmins) return; // Skip if not in group, or sender is admin, or bot is not admin
