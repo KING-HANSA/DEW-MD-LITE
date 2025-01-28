@@ -30,10 +30,10 @@ let madeMenu = `❁ ════ ❃•◯•❃ ════ ❁
 ❁ ════ ❃•◯•❃ ════ ❁
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━
-      *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ꜱᴏʙɪᴀ ᴍᴅ ғᴜʟʟ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ*
+      *WELCOME TO DEW-MD*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-*Created BY Dew-Coder*
+*CREATED BY DEW-CODERS*
 
 
 *╭──❮ DOWNLOAD COMMANDS ❯*
@@ -154,11 +154,11 @@ let madeMenu = `❁ ════ ❃•◯•❃ ════ ❁
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-> *https://github.com/KING-HANSA/DEW-MD/LITE*
+> *https://github.com/KING-HANSA/DEW-MD-LITE*
 
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ DEW-CODER*
+> *POWERED BY DEW-CODER*
 
 ╰━❁ ═══ ❃•⇆•❃ ═══ ❁━╯
 `
