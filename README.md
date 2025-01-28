@@ -1,7 +1,7 @@
 <div class = "repo" align = "center">
  
 <a href = "#">
-<img src = "https://i.imgur.com/bFLFYcp.jpeg"  width="900" height="450">
+<img src = "https://i.ibb.co/hgf2p9M/repository-open-graph-templatefdf.png"  width="900" height="450">
 </img>
  <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=DEW+MD+WHATSAPP+BOT" alt="">
