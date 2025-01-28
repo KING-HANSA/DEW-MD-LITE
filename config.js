@@ -6,7 +6,6 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "XNR11YIQ#FZuTHzVR8JYnbCp17INiQIVG5VZlNHS5m9t-RB-YnAc",
-ANTI_BAD: process.env.ANTI_BAD || "true",
 AUTO_REACT: process.env.AUTO_REACT || "true",
 OWNER_REACT: process.env.OWNER_REACT || "true",
 MONGODB: process.env.MONGODB || "mongodb+srv://Xcelsama:Xcel@xcelsama.qpklf.mongodb.net/?retryWrites=true&w=majority&appName=Xcelsama",
