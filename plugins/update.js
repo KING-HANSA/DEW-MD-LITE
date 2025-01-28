@@ -4,7 +4,7 @@ const { exec } = require('child_process');
 const { cmd } = require('../command');
 
 cmd({
-    pattern: "update",
+    pattern: "updaterepo",
     react: "🔄",
     desc: "Update folder from GitHub",
     category: "system",
