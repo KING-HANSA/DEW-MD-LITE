@@ -86,7 +86,7 @@ let up = `*╭──────────────●●►*
 
 > *Follow Us On Instagram*
 
-*https://Instagram.com/um4rxd*
+*https://Instagram.com/hansa_dewmina_lk*
 
 *╭⊱✫ DEW MD ✫⊱╮*
 *│✫➠ - 📂REPOSITORY NAME:* *DEW MD*
@@ -98,7 +98,7 @@ let up = `*╭──────────────●●►*
 
 *╰──────────────●●►*`;
 
-conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.imgur.com/bFLFYcp.jpeg` }, caption: up })
+conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/hgf2p9M/repository-open-graph-templatefdf.png` }, caption: up })
 
 }
 })
