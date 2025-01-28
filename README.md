@@ -25,7 +25,7 @@ And Subscribe DJ DEWMINA and give one star for queen Roshika.
  - 2._Link with yoour whatsappp using pair code._
    **Pair with WhatsApp* 
    <p align="center">
-       <a href="https://pair-web-public.koyeb.app">
+       <a href="https://ultra-pair-e2afa02e65c6.herokuapp.com/">
          <img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="90" />
        </a>
    </p>
