@@ -6,7 +6,7 @@ const GOOGLE_API_KEY = 'AIzaSyDebFT-uY_f82_An6bnE9WvVcgVbzwDKgU'; // Replace wit
 const GOOGLE_CX = '45b94c5cef39940d1'; // Replace with your Google Custom Search Engine ID
 
 cmd({
-    pattern: "img",
+    pattern: "img2",
     desc: "Search and send images from Google.",
     react: "🖼️",
     category: "media",
