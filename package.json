@@ -31,6 +31,7 @@
     "mongoose": "8.9.0",
     "@bochilteam/scraper": "latest",
     "hirunews-scrap": "^1.1.2",
-    "@sl-code-lords/esana-news": "^1.1.0"
+    "@sl-code-lords/esana-news": "^1.1.0",
+    "moment":"2.30.1"
   }
 }
