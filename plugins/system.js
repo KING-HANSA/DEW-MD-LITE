@@ -1,4 +1,19 @@
-const config = require('../config')
+/**
+██████╗ ███████╗██╗    ██╗              ███╗   ███╗██████╗ 
+██╔══██╗██╔════╝██║    ██║              ████╗ ████║██╔══██╗
+██║  ██║█████╗  ██║ █╗ ██║    █████╗    ██╔████╔██║██║  ██║
+██║  ██║██╔══╝  ██║███╗██║    ╚════╝    ██║╚██╔╝██║██║  ██║
+██████╔╝███████╗╚███╔███╔╝              ██║ ╚═╝ ██║██████╔╝
+╚═════╝ ╚══════╝ ╚══╝╚══╝               ╚═╝     ╚═╝╚═════╝ 
+                                                                    
+* Project name - DEW-MD 
+* Author - Hansa Dewmina
+* Team - Dew-coders 
+* Version - vX
+
+World best and powerfull whatsapp user bot in Sri lanka*/
+
+const {readEnv} = require('../lib/database')
 const {cmd , commands} = require('../command')
 const os = require("os")
 const {runtime} = require('../lib/functions')
@@ -12,6 +27,7 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
+const config = await readEnv();
 let status = `*╭──────────●●►*
 *DEW-MD UPTIME LIST↷*
 
