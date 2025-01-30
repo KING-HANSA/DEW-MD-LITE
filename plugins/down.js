@@ -10,7 +10,7 @@ let baseUrl;
 })();
 
 
-const yourName = "*DEW-MD🧬*";
+const yourName = "*DEW-MD*";
 
 //twitter dl (x)
 cmd({
