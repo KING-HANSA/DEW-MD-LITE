@@ -1,3 +1,18 @@
+/**
+██████╗ ███████╗██╗    ██╗              ███╗   ███╗██████╗ 
+██╔══██╗██╔════╝██║    ██║              ████╗ ████║██╔══██╗
+██║  ██║█████╗  ██║ █╗ ██║    █████╗    ██╔████╔██║██║  ██║
+██║  ██║██╔══╝  ██║███╗██║    ╚════╝    ██║╚██╔╝██║██║  ██║
+██████╔╝███████╗╚███╔███╔╝              ██║ ╚═╝ ██║██████╔╝
+╚═════╝ ╚══════╝ ╚══╝╚══╝               ╚═╝     ╚═╝╚═════╝ 
+                                                                    
+* Project name - DEW-MD 
+* Author - Hansa Dewmina
+* Team - Dew-coders 
+* Version - vX
+
+World best and powerfull whatsapp user bot in Sri lanka*/
+
 const { fetchJson } = require('../lib/functions')
 const config = require('../config')
 const { cmd, commands } = require('../command')
