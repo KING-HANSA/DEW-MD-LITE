@@ -52,14 +52,14 @@ cmd({
         const progressBar = "⭐".repeat(progressPercent / 10) + "⚪".repeat(10 - progressPercent / 10);
 
         // URL of the image for the rank
-        const levelImageURL = "https://files.catbox.moe/rrgoyh.jpeg"; // Replace with your desired image URL
+        const levelImageURL = "https://i.ibb.co/hgf2p9M/repository-open-graph-templatefdf.png"; // Replace with your desired image URL
         
         // Send rank information in text and image
         const caption = `📊 *Rank Information*\n\n👤 *User*: @${
             target.split("@")[0]
         }\n🔝 *Level*: ${level}\n🔄 *Progression*: ${progressPercent}%\n${progressBar}\n📩 *Messages Sent*: ${
             userData.messages
-        }\n✨ *XP*: ${userData.experience}\n\n> 🧞‍♂️POWERED BY KERM🧞‍♂️`;
+        }\n✨ *XP*: ${userData.experience}\n\n> POWERED BY DEW-MD`;
 
         // Send the image and caption together
         await conn.sendMessage(
