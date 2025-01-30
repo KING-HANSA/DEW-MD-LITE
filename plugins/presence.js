@@ -59,6 +59,7 @@ cmd({
     on: "body"
 },    
 async (conn, mek, m, { from, body, isOwner }) => {
+  const config = await readEnv();
     if (config.AUTO_TYPING === 'true') {
         await conn.sendPresenceUpdate('composing', from); // send typing 
     }
