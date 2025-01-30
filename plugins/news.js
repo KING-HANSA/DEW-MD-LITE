@@ -52,7 +52,7 @@ async function checkAndPostNews(conn, groupId) {
 
         if (!lastNewsTitles[groupId].includes(newsItem.title)) {
             await conn.sendMessage(groupId, { 
-                text: `📰 *${newsItem.title}*\n${newsItem.content}\n${newsItem.date}\n*Queen Spriky MD News*`
+                text: `📰 *${newsItem.title}*\n${newsItem.content}\n${newsItem.date}\n*DEW-MD News*`
             });
             lastNewsTitles[groupId].push(newsItem.title);
 
@@ -90,7 +90,7 @@ cmd({
     const hiruNews = await getHiruNews();
     if (hiruNews) {
         await conn.sendMessage(from, { 
-            text: `📰 *${hiruNews.title}*\n${hiruNews.content}\n${hiruNews.date} \n*Queen Spriky MD News*` 
+            text: `📰 *${hiruNews.title}*\n${hiruNews.content}\n${hiruNews.date} \n*DEW-MD News*` 
         });
     } else {
         await conn.sendMessage(from, { text: "Failed to fetch Hiru News." });
