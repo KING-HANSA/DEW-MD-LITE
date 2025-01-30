@@ -11,7 +11,7 @@
 * Team - Dew-coders 
 * Version - vX
 
-World best and powerfull whatsapp user bot in Sri lanka*/
+World best and powerfull whatsapp user bot in Sri lanka*/ 
 
 const {readEnv} = require('../lib/database')
 const {cmd , commands} = require('../command')
