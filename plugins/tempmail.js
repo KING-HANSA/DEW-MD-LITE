@@ -1,3 +1,18 @@
+/**
+██████╗ ███████╗██╗    ██╗              ███╗   ███╗██████╗ 
+██╔══██╗██╔════╝██║    ██║              ████╗ ████║██╔══██╗
+██║  ██║█████╗  ██║ █╗ ██║    █████╗    ██╔████╔██║██║  ██║
+██║  ██║██╔══╝  ██║███╗██║    ╚════╝    ██║╚██╔╝██║██║  ██║
+██████╔╝███████╗╚███╔███╔╝              ██║ ╚═╝ ██║██████╔╝
+╚═════╝ ╚══════╝ ╚══╝╚══╝               ╚═╝     ╚═╝╚═════╝ 
+                                                                    
+* Project name - DEW-MD 
+* Author - Hansa Dewmina
+* Team - Dew-coders 
+* Version - vX
+
+World best and powerfull whatsapp user bot in Sri lanka*/
+
 const { cmd, commands } = require('../command')
 
 // Create a map to store temporary email addresses and messages
