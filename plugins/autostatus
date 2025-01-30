@@ -1,4 +1,3 @@
-
 const { cmd } = require('../command');
 
 // Variable to manage the state of auto status
