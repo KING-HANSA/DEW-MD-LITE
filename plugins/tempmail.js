@@ -18,7 +18,7 @@ cmd({
     // Store the generated email address for the user
     tempEmails.set(userId, { address: randomEmail, messages: [] });
 
-    await citel.reply(`────────Ｓᴘᴇᴇᴅ ＭᴀＸＸ- ＭＤ────────\n────────ᴛᴇᴍᴘᴍᴀɪʟ ɢᴇɴᴇʀᴀᴛᴏʀ sʏsᴛᴇᴍ────────\n\n> ✌️Your temporary email address is:\n${randomEmail}`);
+    await citel.reply(`────────*DEW-MD*────────\n────────*ᴛᴇᴍᴘᴍᴀɪʟ ɢᴇɴᴇʀᴀᴛᴏʀ sʏsᴛᴇᴍ*────────\n\n> ✌️*Your temporary email address is*:\n${randomEmail}`);
 });
 
 // Command for checking messages in the temporary email inbox
@@ -36,7 +36,7 @@ cmd({
 
         if (inbox.length > 0) {
             // Display the received messages
-            let messageList = "Your temporary email inbox:\n";
+            let messageList = "📩*Your temporary email inbox*:\n";
             inbox.forEach((message, index) => {
                 messageList += `${index + 1}. From: ${message.from}, Subject: ${message.subject}\n`;
             });
