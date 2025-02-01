@@ -170,7 +170,8 @@ if(!isOwner && !isGroup && config.MODE === "groups") return
 
 //=============== AUTO REACT ===============
 
-if (config.AUTO_REACT === 'true') { 
+if (config.AUTO_REACT === 'true') {
+  if (isOwner) return;
   if (isReact) return;
   const emojis = ["💗", "🔥", "✨", "💯", "♠️", "🪄", "🔗", "🫧", "🪷", "🦠", "🌺", "🐬", "🦋", "🍁", "🌿", "🍦", "🌏", "✈️", "❄️", "🎉", "🎊"];
     
@@ -181,6 +182,7 @@ if (config.AUTO_REACT === 'true') {
 
 //////////////////////////////
 if (config.AUTO_VOICE === 'true') {
+if (isOwner) return;
   const url = 'https://raw.githubusercontent.com/KING-HANSA/VOICE-KING-HANSA/main/Voice-Raw/KING-HANSA-VOICE'
   let { data } = await axios.get(url)
   for (vr in data){
