@@ -185,9 +185,9 @@ const prefix = config.PREFIX
         return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options });
       }
     }
-
+//======================================================================
     // Always set the bot's presence status to 'unavailable'
-    conn.sendPresenceUpdate('unavailable'); // Sets the bot's last seen status
+    //conn.sendPresenceUpdate('unavailable'); // Sets the bot's last seen status
 
   // Auto React///////////////////////////////////////
   if (!isReact && senderNumber !== botNumber) {
@@ -203,6 +203,8 @@ const prefix = config.PREFIX
     if(!isOwner && isGroup && config.MODE === "inbox") return
     if(!isOwner && !isGroup && config.MODE === "groups") return
 
+    if (isCmd && config.READ_CMD === "true" && config.ALLWAYS_OFFLINE === "false") {
+    await conn.readMessages([mek.key]) }
 
     const events = require('./command');
     const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
